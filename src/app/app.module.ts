@@ -10,6 +10,8 @@ import { AngularMaterialModule } from "./modules/angular-material.module";
 import { NgBootstrapModule } from "./modules/ng-bootstrap.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from "./app.component";
+import { RouterModule } from '@angular/router';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     declarations: [
@@ -24,7 +26,8 @@ import { AppComponent } from "./app.component";
         FormsModule,
         AngularMaterialModule,
         NgBootstrapModule,
-        FlexLayoutModule,
+        RouterModule,
+        NgbCollapseModule
     ],
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],

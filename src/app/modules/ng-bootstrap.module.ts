@@ -4,7 +4,7 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 const bootstrapModules = [NgbNavModule];
 @NgModule({
-  imports: [CommonModule, ...bootstrapModules],
+  imports: [CommonModule, ...bootstrapModules] ,
   exports: [...bootstrapModules],
 })
 export class NgBootstrapModule {}
