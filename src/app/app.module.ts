@@ -12,6 +12,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from "./app.component";
 import { RouterModule } from '@angular/router';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NeonSectionComponent } from './components/neon-section/neon-section.component';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
         AppNavbarComponent,
         AppMainComponent,
         AppFooterComponent,
+        NeonSectionComponent
     ],
     imports: [
         CommonModule,
