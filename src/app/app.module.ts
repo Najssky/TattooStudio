@@ -13,6 +13,7 @@ import { AppComponent } from "./app.component";
 import { RouterModule } from '@angular/router';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NeonSectionComponent } from './components/neon-section/neon-section.component';
+import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { NeonSectionComponent } from './components/neon-section/neon-section.com
         AppNavbarComponent,
         AppMainComponent,
         AppFooterComponent,
-        NeonSectionComponent
+        NeonSectionComponent,
+        AboutUsSectionComponent
     ],
     imports: [
         CommonModule,
