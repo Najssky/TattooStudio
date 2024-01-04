@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NeonSectionComponent } from './components/neon-section/neon-section.component';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
+import { ArtistsSectionComponent } from './components/artists-section/artists-section.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
         AppMainComponent,
         AppFooterComponent,
         NeonSectionComponent,
-        AboutUsSectionComponent
+        AboutUsSectionComponent,
+        ArtistsSectionComponent
     ],
     imports: [
         CommonModule,

@@ -1,0 +1,192 @@
+/* import the Bootstrap */
+@import "bootstrap";
+
+/* ------- customize primary button color -------- */   
+
+
+.btn-primary {
+    background-color: #5228F5!important;
+}
+.artists{
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+  }
+  .artists-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-fourunits);
+  justify-content: space-between;
+    img{
+        border-radius:25px;
+    }
+  }
+.artists-container-text{
+    display: flex;
+    max-width:33.33%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    h1{
+        color:#5228F5;
+    }
+    h2{
+        color:#ffffff
+        
+    }
+    span{
+        color:#595959;
+        margin-top:5%;
+        text-align: justify;
+    }
+    padding: 5%;
+  }
+
+  .artists-container-artist1{
+    background: url("/assets/Sasza.jpg") no-repeat center;
+    width:100%;
+    max-width:500px;
+    min-height:800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:5%;
+    position:relative;
+    border-radius: 50px 0 50px 0;
+  }
+
+.artists-container-artist1-hover{
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  background:rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 50px 0;
+  height:200px;
+  opacity:0;
+  transition: .5s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:center;
+  justify-content:space space-evenly;
+  h1{
+    margin-bottom:5%;
+  }
+  }
+.artists-container-artist2{
+    background: url("/assets/question-mark.jpg") no-repeat center;
+    width:100%;
+    max-width:500px;
+    min-height:800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:5%;
+    position:relative;
+    border-radius: 50px 0 50px 0;
+  }
+
+  .artists-container-artist2-hover{
+width:100%;
+position:absolute;
+bottom:0px;
+background:rgba(255, 255, 255, 0.6);
+border-radius: 0 0 50px 0;
+height:200px;
+opacity:0;
+transition: .5s ease;
+display: flex;
+  }
+.artists-container-artist1-hover-buttons{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width:100%;
+}
+
+.artists-container-artist1:hover .artists-container-artist1-hover{
+    opacity:1;
+}
+.artists-container-artist2:hover .artists-container-artist2-hover{
+  opacity:1;
+}
+
+@media (max-width: 1734px) { 
+  .artists-container-artist1{
+    width:100%;
+    max-width:500px;
+    }
+    .artists-container-artist2{
+      width:100%;
+      max-width:500px;
+    }
+  .artists-container-text{
+      min-width:100%;
+  }
+  .artists-container{
+      flex-wrap: wrap-reverse;
+  }
+}
+  @media (max-width: 1250px) { 
+    .artists-container-artist1{
+      width:100%;
+      max-width:500px;
+      margin:5% auto;
+    }
+    .artists-container-artist2{
+      width:100%;
+      max-width:500px;
+      margin: 5% auto;
+    }
+    .artists-container-text{
+        min-width:100%;
+    }
+    .artists-container{
+        flex-wrap: wrap-reverse;
+    }
+  }
+  @media (max-width: 500px) { 
+    .artists-container-artist2-hover-text{
+        h1{
+          font: size 1.5em !important;;
+        }
+        h2{
+          font-size:1.2em !important;
+        }
+    } 
+  } 
+  .artists-container-artist1-hover-text{
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;  
+    overflow: hidden;
+    justify-content: center;
+  } 
+  .artists-container-artist2-hover-text{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+      h1{
+        font-size:2em;
+        text-align: center;
+        margin-bottom:5%;
+      }
+      h2{
+        font-size:1.5em;
+        text-align: center;
+      }
+  } 
