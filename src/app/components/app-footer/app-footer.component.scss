@@ -1,0 +1,54 @@
+.container{
+    width:100%;
+    min-height:400px;
+    color:#FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 300px;
+    height:auto;
+    .logo-social-icons{
+        margin-top:15px;
+        display:flex;
+        justify-content: space-around;
+    }
+}
+.adress{
+    width:300px;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    .adress-text{
+        max-width:275px;
+    }
+}
+.appointment{
+    width:300px;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    .appointment-text{
+        max-width:275px;
+    }
+}
+.socials{
+    width:250px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    .socials-text{
+        width:250px;
+        text-align: center;
+    }
+    .socials-icons{
+        width: 250px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
