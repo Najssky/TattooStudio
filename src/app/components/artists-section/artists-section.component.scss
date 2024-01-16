@@ -71,18 +71,29 @@
   position:absolute;
   bottom:0px;
   background:rgba(255, 255, 255, 0.6);
-  border-radius: 0 0 50px 0;
-  height:200px;
+  border-radius: 50px 0 50px 0;
+  height:100%;
   opacity:0;
   transition: .5s ease;
   display: flex;
   flex-wrap: wrap;
   align-content:center;
-  justify-content:space space-evenly;
+  justify-content:space-evenly;
+}  
+.artists-container-artist1-hover-text{
+  display: flex;
+  flex-wrap: wrap;
   h1{
-    margin-bottom:5%;
+    width:90%;
+    text-align: center;
   }
+  .artists-container-artist1-hover-text-desciption{
+    width:90%;
+    text-align: justify;
+    margin-bottom: 20px;
   }
+}
+  
 .artists-container-artist2{
     background: url("/assets/question-mark.jpg") no-repeat center;
     width:100%;
