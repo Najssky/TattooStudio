@@ -1,6 +1,6 @@
 .container{
     width:100%;
-    min-height:400px;
+    padding:150px 0;
     color:#FFF;
     display: flex;
     justify-content: space-around;
@@ -9,18 +9,15 @@
 }
 .logo{
     width: 300px;
-    height:auto;
-    .logo-social-icons{
-        margin-top:15px;
-        display:flex;
-        justify-content: space-around;
-    }
+    height:150px;
+    padding-bottom:50px;
 }
 .adress{
     width:300px;
+    height: 150px;
     display:flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     .adress-text{
         max-width:275px;
@@ -28,9 +25,10 @@
 }
 .appointment{
     width:300px;
+    height: 150px;
     display:flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     .appointment-text{
         max-width:275px;
@@ -38,9 +36,10 @@
 }
 .socials{
     width:250px;
+    height: 150px;
     display:flex;
     flex-wrap:wrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     .socials-text{
         width:250px;
