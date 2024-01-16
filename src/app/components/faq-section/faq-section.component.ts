@@ -4,7 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-faq-section',
   templateUrl: './faq-section.component.html',
   styleUrl: './faq-section.component.scss',
-  encapsulation: ViewEncapsulation.None
 })
 export class FaqSectionComponent {
   questionsAndAnswers = [
