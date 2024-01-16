@@ -16,6 +16,7 @@ import { NeonSectionComponent } from './components/neon-section/neon-section.com
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { ArtistsSectionComponent } from './components/artists-section/artists-section.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import { FaqSectionComponent } from './components/faq-section/faq-section.compon
         AngularMaterialModule,
         NgBootstrapModule,
         RouterModule,
-        NgbCollapseModule
+        NgbCollapseModule,
+        GalleryModule
     ],
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],

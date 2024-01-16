@@ -43,3 +43,4 @@ Thumbs.db
 src/assets/AboutUs.png
 src/assets/Sasza.jpg
 src/assets/Valeria.jpg
+src/app/environments/environment.ts
