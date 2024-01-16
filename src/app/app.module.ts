@@ -15,6 +15,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NeonSectionComponent } from './components/neon-section/neon-section.component';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { ArtistsSectionComponent } from './components/artists-section/artists-section.component';
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { ArtistsSectionComponent } from './components/artists-section/artists-se
         AppFooterComponent,
         NeonSectionComponent,
         AboutUsSectionComponent,
-        ArtistsSectionComponent
+        ArtistsSectionComponent,
+        FaqSectionComponent
     ],
     imports: [
         CommonModule,
