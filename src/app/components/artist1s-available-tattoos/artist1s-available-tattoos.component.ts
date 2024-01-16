@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './artist1s-available-tattoos.component.scss'
 })
 export class Artist1sAvailableTattoosComponent {
-
+  
 }
