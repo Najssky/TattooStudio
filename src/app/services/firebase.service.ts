@@ -1,15 +1,28 @@
+
 import { Injectable } from '@angular/core';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { environment } from '../environments/environment';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { Observable, combineLatest, forkJoin, from, map, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FirebaseService {
-  constructor() {
-    AngularFireModule.initializeApp(environment.firebaseConfig);
+  constructor(private storage: AngularFireStorage) {}
+
+  getAllImageUrls(folder: string): Observable<any> {
+    const ref = this.storage.ref(folder);
+
+    return ref.listAll().pipe(
+        switchMap(result =>
+            combineLatest(result.items.map((item: { getDownloadURL: () => any; }) => item.getDownloadURL()))
+          )
+    );
+  }
+  getImages(): Observable<any[]> {
+    return this.storage.ref('images').listAll().pipe(
+      switchMap(result =>
+        combineLatest(result.items.map((item: { getDownloadURL: () => any; }) => item.getDownloadURL()))
+      )
+    );
   }
 }
