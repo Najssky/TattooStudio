@@ -1,5 +1,11 @@
 <h1 mat-dialog-title>Wolne wzory Saszy</h1>
-<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
+<div mat-dialog-content>
+  <p-galleria [value]="imageUrls" [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item" style="width: 100%; display: block;" />
+    </ng-template>
+  </p-galleria>
+</div>
 <div mat-dialog-actions>
   <button mat-button mat-dialog-close>Zamknij</button>
 </div>

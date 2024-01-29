@@ -1,5 +1,11 @@
 <h1 mat-dialog-title>Ostanie realizacje Saszy</h1>
-<div mat-dialog-content></div>
+<div mat-dialog-content>
+  <p-galleria [value]="imageUrls" [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item" style="width: 100%; display: block;" />
+    </ng-template>
+  </p-galleria>
+</div>
 <div mat-dialog-actions>
   <button mat-button mat-dialog-close>Zamknij</button>
 </div>
