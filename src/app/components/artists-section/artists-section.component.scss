@@ -19,7 +19,6 @@
   .artists-container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
@@ -34,9 +33,6 @@
 .artists-container-text{
     display: flex;
     max-width:33.33%;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
     h1{
         color:#5228F5;
     }
@@ -49,12 +45,16 @@
         margin-top:5%;
         text-align: justify;
     }
-    padding: 5%;
+    font-size:medium;
+    padding:0 5% 0 0;
+    @media (max-width: 1734px) { 
+    padding:0 0 0 5%;
+    }
   }
 
   .artists-container-artist1{
     background: url("/assets/Sasza.jpg") no-repeat center;
-    width:100%;
+    width:33.33%;
     max-width:500px;
     min-height:800px;
     display: flex;
@@ -96,7 +96,7 @@
   
 .artists-container-artist2{
     background: url("/assets/question-mark.jpg") no-repeat center;
-    width:100%;
+    width:33.33%;
     max-width:500px;
     min-height:800px;
     display: flex;
