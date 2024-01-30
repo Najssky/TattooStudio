@@ -1,3 +1,4 @@
+import { VoucherSectionComponent } from './components/voucher-section/voucher-section.component';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from "./views/home-page/home-page.component";
 import { AppNavbarComponent } from "./components/app-navbar/app-navbar.component";
@@ -38,7 +39,8 @@ import { PrimeNgModule } from './modules/prime-ng.module';
         ArtistsSectionComponent,
         FaqSectionComponent,
         Artist1sAvailableTattoosComponent,
-        Artist1TattoosGalleryComponent
+        Artist1TattoosGalleryComponent,
+        VoucherSectionComponent,
     ],
     imports: [
         CommonModule,
